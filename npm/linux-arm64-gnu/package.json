@@ -1,0 +1,21 @@
+{
+  "name": "napi-maybe-compressed-blob-linux-arm64-gnu",
+  "version": "0.0.2",
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "arm64"
+  ],
+  "main": "napi-maybe-compressed-blob.linux-arm64-gnu.node",
+  "files": [
+    "napi-maybe-compressed-blob.linux-arm64-gnu.node"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  },
+  "libc": [
+    "glibc"
+  ]
+}
