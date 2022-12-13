@@ -52,14 +52,14 @@ jobs:
               set -e &&
               yarn build --target aarch64-unknown-linux-gnu &&
               aarch64-unknown-linux-gnu-strip *linux*.node
-          - host: ubuntu-latest
-            target: aarch64-unknown-linux-musl
-            docker: ghcr.io/napi-rs/napi-rs/nodejs-rust:lts-alpine
-            build: |-
-              set -e &&
-              rustup target add aarch64-unknown-linux-musl &&
-              yarn build --target aarch64-unknown-linux-musl &&
-              /aarch64-linux-musl-cross/bin/aarch64-linux-musl-strip *linux*.node
+          # - host: ubuntu-latest
+          #   target: aarch64-unknown-linux-musl
+          #   docker: ghcr.io/napi-rs/napi-rs/nodejs-rust:lts-alpine
+          #   build: |-
+          #     set -e &&
+          #     rustup target add aarch64-unknown-linux-musl &&
+          #     yarn build --target aarch64-unknown-linux-musl &&
+          #     /aarch64-linux-musl-cross/bin/aarch64-linux-musl-strip *linux*.node
     name: stable - ${{ matrix.settings.target }} - node@16
     runs-on: ${{ matrix.settings.host }}
     steps:
