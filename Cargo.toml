@@ -14,7 +14,7 @@ sp-maybe-compressed-blob = {version = "4.1.0-dev", git = "https://github.com/par
 
 
 [build-dependencies]
-napi-build = "1.2.1"
+napi-build = "2.0.1"
 
 [profile.release]
 lto = true
