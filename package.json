@@ -29,5 +29,11 @@
     "prepublishOnly": "napi prepublish -t npm",
     "version": "napi version",
     "test": "mocha index.test.js"
+  },
+  "optionalDependencies": {
+    "napi-maybe-compressed-blob-darwin-x64": "0.0.7",
+    "napi-maybe-compressed-blob-linux-x64-gnu": "0.0.7",
+    "napi-maybe-compressed-blob-darwin-arm64": "0.0.7",
+    "napi-maybe-compressed-blob-linux-arm64-gnu": "0.0.7"
   }
 }
