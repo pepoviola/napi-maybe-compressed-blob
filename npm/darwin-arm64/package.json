@@ -1,6 +1,6 @@
 {
   "name": "napi-maybe-compressed-blob-darwin-arm64",
-  "version": "0.0.4",
+  "version": "0.0.8",
   "os": [
     "darwin"
   ],
