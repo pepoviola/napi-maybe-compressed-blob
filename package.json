@@ -1,14 +1,17 @@
 {
   "name": "napi-maybe-compressed-blob",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "main": "index.js",
   "types": "index.d.ts",
   "napi": {
     "name": "napi-maybe-compressed-blob",
     "triples": {
+      "defaults": false,
       "additional": [
         "aarch64-apple-darwin",
-        "aarch64-unknown-linux-gnu"
+        "aarch64-unknown-linux-gnu",
+        "x86_64-apple-darwin",
+        "x86_64-unknown-linux-gnu"
       ]
     }
   },
@@ -29,10 +32,9 @@
     "test": "mocha index.test.js"
   },
   "optionalDependencies": {
-    "napi-maybe-compressed-blob-darwin-x64": "0.0.8",
-    "napi-maybe-compressed-blob-linux-x64-gnu": "0.0.8",
-    "napi-maybe-compressed-blob-darwin-arm64": "0.0.8",
-    "napi-maybe-compressed-blob-linux-arm64-gnu": "0.0.8",
-    "napi-maybe-compressed-blob-win32-x64-msvc": "0.0.2"
+    "napi-maybe-compressed-blob-darwin-x64": "0.0.10",
+    "napi-maybe-compressed-blob-linux-x64-gnu": "0.0.10",
+    "napi-maybe-compressed-blob-darwin-arm64": "0.0.10",
+    "napi-maybe-compressed-blob-linux-arm64-gnu": "0.0.10"
   }
 }
